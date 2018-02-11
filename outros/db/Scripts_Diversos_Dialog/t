@@ -1,0 +1,31 @@
+ARQUIVO=dados.result
+#ARQUIVO=/etc/passwd
+
+
+
+eval \
+dialog --menu "Dois campos por linha, 2o item com espaços" \
+	0 40 10 $(
+		IFS="|"
+		while read cod nome email; do
+			#echo $login \"$nome\"
+			echo $cod  \"$nome\"
+		done < $ARQUIVO
+	)
+
+#eval \
+dialog --checklist "Escolha os itens" \
+--stdout \
+0 0 0 $(
+	IFS="|"
+	while read cod nome email flags; do
+	echo $cod  \"$nome\" $flags
+	done < $ARQUIVO
+)
+#eval \
+#dialog --checklist "Escolha os itens" \
+#	--stdout \
+#	 0 0 0 \
+#	 4 "Jeferson" ON \
+#	10 "Jeco" ON \
+#	 11 "Jeffi" ON

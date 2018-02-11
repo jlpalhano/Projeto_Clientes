@@ -1,0 +1,24 @@
+Feb  6 00:09:07 debian liblogging-stdlog:  [origin software="rsyslogd" swVersion="8.24.0" x-pid="356" x-info="http://www.rsyslog.com"] rsyslogd was HUPed
+Feb  6 00:09:07 debian liblogging-stdlog:  [origin software="rsyslogd" swVersion="8.24.0" x-pid="356" x-info="http://www.rsyslog.com"] rsyslogd was HUPed
+Feb  6 00:17:54 debian colord[8915]: failed to get session [pid 23698]: No such device or address
+Feb  6 00:17:54 debian colord[8915]: failed to get session [pid 23698]: No such device or address
+Feb  6 00:25:34 debian colord[8915]: failed to get session [pid 23974]: No such device or address
+Feb  6 00:25:34 debian colord[8915]: failed to get session [pid 23974]: No such device or address
+Feb  6 01:14:50 debian colord[8915]: failed to get session [pid 25567]: No such device or address
+Feb  6 15:14:45 debian kernel: [198542.685941] UDF-fs: warning (device sr0): udf_fill_super: No partition found (2)
+Feb  7 00:09:45 debian colord[8915]: failed to get session [pid 31395]: No such device or address
+Feb  7 00:09:45 debian liblogging-stdlog:  [origin software="rsyslogd" swVersion="8.24.0" x-pid="356" x-info="http://www.rsyslog.com"] rsyslogd was HUPed
+Feb  8 00:08:59 debian colord[8915]: failed to get session [pid 12677]: No such device or address
+Feb  8 00:08:59 debian liblogging-stdlog:  [origin software="rsyslogd" swVersion="8.24.0" x-pid="356" x-info="http://www.rsyslog.com"] rsyslogd was HUPed
+Feb  9 00:09:42 debian colord[8915]: failed to get session [pid 17550]: No such device or address
+Feb  9 00:09:42 debian liblogging-stdlog:  [origin software="rsyslogd" swVersion="8.24.0" x-pid="356" x-info="http://www.rsyslog.com"] rsyslogd was HUPed
+Feb  9 10:08:39 debian kernel: [439377.037742] e1000: enp0s3 NIC Link is Down
+Feb  9 10:08:39 debian kernel: [439377.041150] usb 2-1: USB disconnect, device number 2
+Feb  9 10:08:39 debian kernel: [439377.724473] usb 2-1: new full-speed USB device number 3 using ohci-pci
+Feb  9 10:08:40 debian kernel: [439378.079327] usb 2-1: New USB device found, idVendor=80ee, idProduct=0021
+Feb  9 10:08:40 debian kernel: [439378.079332] usb 2-1: New USB device strings: Mfr=1, Product=3, SerialNumber=0
+Feb  9 10:08:40 debian kernel: [439378.079335] usb 2-1: Product: USB Tablet
+Feb  9 10:08:40 debian kernel: [439378.079337] usb 2-1: Manufacturer: VirtualBox
+Feb  9 10:08:40 debian kernel: [439378.104810] input: VirtualBox USB Tablet as /devices/pci0000:00/0000:00:06.0/usb2/2-1/2-1:1.0/0003:80EE:0021.0002/input/input8
+Feb  9 10:08:40 debian kernel: [439378.105140] hid-generic 0003:80EE:0021.0002: input,hidraw0: USB HID v1.10 Mouse [VirtualBox USB Tablet] on usb-0000:00:06.0-1/input0
+Feb  9 10:08:43 debian kernel: [439381.061060] e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX

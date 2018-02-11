@@ -1,0 +1,28 @@
+
+
+
+
+
+
+IFS=$''
+#$for pkg in `cat dados.result`
+for i in `cat dados.result`
+do
+  /bin/echo  $i | awk -F"|" '{print $1}' > cod
+  /bin/echo  $i | awk -F"|" '{print $2}' > nome
+done
+
+
+
+#dialog --stdout \
+#--checklist "Escolha os itens" \
+#0 0 0 \
+#6 Simone Mituti ON \
+#9 Sheila Leite Palhano ON
+
+dialog --stdout \
+--checklist "Escolha os itens" \
+0 0 0 \
+$( /usr/bin/paste cod nome | sed 's/.*/& ON/' )
+
+

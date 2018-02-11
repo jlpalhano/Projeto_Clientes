@@ -1,0 +1,6 @@
+fulano@gmail.com
+beltrano@microsoft.com
+silva@uol.com.br
+maria@gmail.com
+joao@microsoft.com
+jose@uol.com.br

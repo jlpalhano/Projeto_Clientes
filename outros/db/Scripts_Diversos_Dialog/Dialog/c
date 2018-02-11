@@ -1,0 +1,11 @@
+SYSTEM=$(dialog \
+ --title "Seleção dos Componentes" \
+ --checklist "O que você quer instalar?" \
+ 0 0 0 \
+ syntax "Arquivos de sintaxe" ON \
+ mouse "Suporte a mouse" OFF \
+ color "Suporte a cores" ON \
+ beep "Driver avançado de som" OFF \
+--stdout )
+
+echo $SYSTEM

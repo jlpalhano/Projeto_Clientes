@@ -1,0 +1,43 @@
+#!/bin/bash
+
+pkglist=""
+#n=1
+#for pkg in $(cat file.txt)
+#do
+   DB="../banco.db"
+
+
+NOME=$( cat file.txt )
+QUERY="SELECT count(nome) FROM usuarios WHERE Nome like '$NOME%'"
+NOMECOD="SELECT cod, nome FROM usuarios WHERE Nome like '$NOME%'"
+RESP=`sqlite3 $DB "$QUERY"`
+RESP2=`sqlite3 $DB "$NOMECOD"`
+case $RESP in
+        [1-9]|[1-9][0-9])  
+
+	pkglist="$RESP2";
+	IFS=""
+	echo $pkglist |sed 's/|/ /g;s@.* .*@& off@g' > t.txt
+	pk=$( cat t.txt )
+        break;;
+        *)      dialog --title "Resultado:" --msgbox "Desculpe! Não achei nada!" 5 41;
+        break;;
+esac
+
+#IFS=""
+
+#done
+
+#echo $pkglist | tr  "|" "  " | sed 's@.* .*@& off@g' 
+echo "/usr/bin/dialog --stdout --checklist 'Choose item:' 80 40 20 $pk"
+#choices=`/usr/bin/dialog --stdout --checklist 'Choose item:' 80 40 20 $pk`
+
+#if [ $? -eq 0 ]
+#then
+#        for choice in $choices
+#        do
+#                echo "You chose: $choice"
+#        done
+#else
+#        echo cancel selected
+#fi
